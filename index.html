@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uma carta</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.35), transparent 30%),
+        #e9dfca;
+      color: #29251f;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.8;
+      padding: 28px 16px;
+    }
+
+    .letter {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 42px 34px 50px;
+      background: #f7f0df;
+      box-shadow: 0 10px 35px rgba(55, 43, 27, .18);
+      border: 1px solid rgba(80, 65, 40, .18);
+    }
+
+    p {
+      margin: 0 0 1.15em;
+      font-size: 1.05rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(8px);
+      animation: appear 1.2s ease forwards;
+    }
+
+    .delay1 { animation-delay: .4s; }
+    .delay2 { animation-delay: .9s; }
+    .delay3 { animation-delay: 1.4s; }
+
+    .emphasis {
+      margin: 1.7em 0;
+      text-align: center;
+      font-size: 1.35rem;
+      font-style: italic;
+    }
+
+    .final {
+      margin-top: 2.3em;
+      text-align: center;
+      font-size: 1.15rem;
+    }
+
+    .signature {
+      margin-top: 2.5em;
+      text-align: right;
+      font-style: italic;
+    }
+
+    @keyframes appear {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 520px) {
+      body { padding: 12px 8px; }
+      .letter { padding: 30px 22px 38px; }
+      p { font-size: 1rem; }
+      .emphasis { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="letter">
+    <p class="reveal">
+      Se fazer um desenho é difícil, escrever uma música é muito mais.
+    </p>
+
+    <p class="reveal delay1">
+      Porque um desenho consegue guardar um momento. Uma música guarda aquilo que aquele momento fez dentro da gente.
+    </p>
+
+    <p class="reveal delay1">
+      Eu poderia tentar explicar essa música, dizer quando escrevi, por que escolhi cada palavra, o que significa cada verso. Mas acho que seria injusto com ela. Você acabou de ouvir. Então talvez seja melhor deixar que ela fale por mim.
+    </p>
+
+    <p class="reveal delay2">
+      Não estou dizendo isso para mudar alguma coisa. Não estou dizendo para que você volte, para que responda, para que se sinta culpada ou para que faça alguma coisa com esse sentimento.
+    </p>
+
+    <p class="reveal delay2">
+      Estou dizendo porque foi verdade.
+    </p>
+
+    <p class="reveal delay2">
+      Eu me importei com você nos momentos em que você estava perto e nos momentos em que parecia tão distante. Guardei as coisas que você me mostrou e até aquelas que talvez nunca tenha percebido que eu enxergava. Estive ao seu lado quando era fácil gostar de você e também quando estar perto começou a doer.
+    </p>
+
+    <p class="reveal delay2">
+      E talvez você nunca tenha sabido o tamanho disso.
+    </p>
+
+    <p class="reveal delay2">
+      Talvez nem precise saber.
+    </p>
+
+    <p class="reveal delay3">
+      Mas eu precisava que, pelo menos uma vez, você pudesse ouvir aquilo que eu não consegui dizer olhando para você.
+    </p>
+
+    <p class="reveal delay3">
+      Essa música nasceu disso.
+    </p>
+
+    <p class="reveal delay3">
+      De tudo aquilo que foi embora com você: o cheiro, o toque, o seu jeito de me olhar.
+    </p>
+
+    <p class="reveal delay3">
+      E de tudo aquilo que ficou.
+    </p>
+
+    <p class="emphasis reveal delay3">
+      Um sabor forte e irresistível de saudade.
+    </p>
+
+    <p class="reveal delay3">
+      E essa música.
+    </p>
+
+    <p class="reveal delay3">
+      Embora ela esteja ligada a esse papel, que pode ser guardado ou jogado fora, o papel pode desaparecer. O que existe nele e o que ele representa, não.
+    </p>
+
+    <p class="reveal delay3">
+      Pensando bem, ainda bem que eu não posso te dar flores, elas morreriam. E talvez ninguém pudesse vê-las, muito menos saber tudo o que existiu por trás delas.
+    </p>
+
+    <p class="reveal delay3">
+      Um dia, todas as flores que você recebeu estarão mortas. O desenho pode se perder, ser amassado ou simplesmente desaparecer.
+    </p>
+
+    <p class="reveal delay3">
+      Mas essa música vai continuar existindo.
+    </p>
+
+    <p class="reveal delay3">
+      E talvez você possa ouvi-la algum dia, quando estiver velhinha, e mostrar para alguém:
+    </p>
+
+    <p class="emphasis reveal delay3">
+      “Vejam a música que um dia fizeram para mim.”
+    </p>
+
+    <p class="reveal delay3">
+      “Ela não é tão bonita ou romântica quanto flores. Mas foi o único jeito que o coração daquele homem encontrou para cantar.”
+    </p>
+
+    <p class="reveal delay3">
+      “Ele era um tanto escroto. Usava uma armadura quase o tempo todo. Mas naquele momento ele tirou a armadura. E cantou pra mim.”
+    </p>
+
+    <p class="reveal delay3">
+      E se existe uma coisa que eu não quero deixar escondida atrás de nenhuma letra, nenhum acorde ou nenhuma melodia...
+    </p>
+
+    <p class="emphasis reveal delay3">
+      É que eu amei você.
+    </p>
+
+    <p class="final reveal delay3">
+      Só queria que você soubesse que o que eu sempre quis de você era apenas que, dentro ou fora daquele carro, eu fosse seu.
+    </p>
+  </main>
+</body>
+</html>
