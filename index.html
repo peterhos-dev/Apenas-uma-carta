@@ -60,10 +60,12 @@
             pointer-events: none;
         }
 
-        p {
+        p, .separator, .signature-block {
             margin-bottom: 22px;
             text-align: justify;
             text-justify: inter-word;
+            opacity: 0; /* Começa invisível para o efeito */
+            animation: fadeIn 2s ease-in-out forwards;
         }
 
         /* Primeira letra da carta em estilo capitular clássico */
@@ -104,15 +106,51 @@
             color: #1f1a17;
         }
 
+        /* Animação de entrada suave */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Encadeamento de tempo de entrada para cada parágrafo */
+        p:nth-child(1)  { animation-delay: 0.5s; }
+        p:nth-child(2)  { animation-delay: 1.8s; }
+        p:nth-child(3)  { animation-delay: 3.2s; }
+        p:nth-child(4)  { animation-delay: 4.8s; }
+        p:nth-child(5)  { animation-delay: 6.0s; }
+        p:nth-child(6)  { animation-delay: 7.2s; }
+        p:nth-child(7)  { animation-delay: 8.8s; }
+        p:nth-child(8)  { animation-delay: 9.8s; }
+        p:nth-child(9)  { animation-delay: 10.8s; }
+        p:nth-child(10) { animation-delay: 12.0s; }
+        p:nth-child(11) { animation-delay: 13.0s; }
+        p:nth-child(12) { animation-delay: 14.0s; }
+        p:nth-child(13) { animation-delay: 15.0s; }
+        p:nth-child(14) { animation-delay: 16.0s; }
+        p:nth-child(15) { animation-delay: 17.2s; }
+        p:nth-child(16) { animation-delay: 18.5s; }
+        p:nth-child(17) { animation-delay: 20.0s; }
+        p:nth-child(18) { animation-delay: 21.5s; }
+        p:nth-child(19) { animation-delay: 23.0s; }
+        p:nth-child(20) { animation-delay: 24.2s; }
+        .separator     { animation-delay: 25.5s; }
+        p.highlight    { animation-delay: 26.8s; }
+        p:nth-child(23) { animation-delay: 28.5s; }
+        .signature-block { animation-delay: 30.5s; }
+
         @media (max-width: 480px) {
             body {
                 padding: 10px 5px;
+                font-size: 1.15rem;
             }
             .letter {
                 padding: 35px 22px;
-            }
-            body {
-                font-size: 1.15rem;
             }
             .signature-block {
                 font-size: 1.6rem;
